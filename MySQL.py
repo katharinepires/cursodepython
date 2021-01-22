@@ -10,8 +10,8 @@ import mysql.connector
 # In[2]:
 
 
-conexao = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+conexao = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 conexao.close()
 
 
@@ -26,8 +26,8 @@ from mysql.connector import connection
 # In[4]:
 
 
-conexao = connection.MySQLConnection(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+conexao = connection.MySQLConnection(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 conexao.close()
 
 
@@ -36,8 +36,8 @@ conexao.close()
 # In[5]:
 
 
-co = connection.MySQLConnection(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+co = connection.MySQLConnection(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = co.cursor()
 
 
@@ -57,8 +57,8 @@ co.close()
 # In[7]:
 
 
-conexao = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+conexao = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = conexao.cursor()
 
 inserir_cont = ("insert into contatos (nome, email) values (%s, %s)")
@@ -75,8 +75,8 @@ conexao.close()
 # In[8]:
 
 
-con = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+con = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = con.cursor()
 
 inserir_cont = ("insert into contatos (nome, email) values (%(nome)s, %(email)s)")
@@ -94,8 +94,8 @@ con.close()
 # In[9]:
 
 
-c = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+c = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = c.cursor()
 atualizar = ("update contatos set nome = %s, telefone = %s, email = %s where id = 10")
 contato = ('Python', '(56)87954036','matador_porco3@gmail.com')
@@ -110,8 +110,8 @@ c.close()
 # In[10]:
 
 
-conexao = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+conexao = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = conexao.cursor()
 remover = ("delete from contatos where id = 9")
 cursor.execute(remover)
@@ -131,8 +131,8 @@ print(dir(mysql))
 # In[12]:
 
 
-conexao = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+conexao = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = conexao.cursor()
 
 consulta = ("select nome, telefone, email from contatos where nome like 'E%'")
@@ -148,8 +148,8 @@ conexao.close()
 # In[13]:
 
 
-conexao = mysql.connector.connect(user = "root", password = "#2021meuano", 
-                                  host = "127.0.0.1", database = "agenda")
+conexao = mysql.connector.connect(user = "root", password = "****", 
+                                  host = "****", database = "agenda")
 cursor = conexao.cursor()
 
 consulta = ("select nome, telefone, email from contatos")
